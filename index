@@ -2,116 +2,86 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Personal Branding - Nama Kamu</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #f4f6f8;
-      color: #333;
-    }
-    header {
-      background-color: #007acc;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-      font-style: italic;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      background: white;
-      padding: 1.5rem 2rem;
-      margin-bottom: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
-    }
-    h2 {
-      color: #007acc;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #007acc;
-      padding-bottom: 0.3rem;
-    }
-    ul.skills {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
-    ul.skills li {
-      background: #007acc;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-weight: bold;
-      font-size: 0.9rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #666;
-      background-color: #e1e8f0;
-    }
-    a.contact-link {
-      color: #007acc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a.contact-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Branding</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Nama Kamu</h1>
-    <p>Web Developer | Designer | Content Creator</p>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-100 shadow-md py-6">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">Nama Kamu</h1>
+      <p class="text-lg text-gray-600">Tagline atau profesi kamu</p>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>Tentang Saya</h2>
-      <p>
-        Halo! Saya adalah seorang web developer dan designer dengan passion dalam menciptakan website yang menarik dan fungsional. Saya senang belajar teknologi baru dan selalu berusaha memberikan hasil terbaik untuk setiap proyek yang saya kerjakan.
+  <!-- About Section -->
+  <section class="py-12">
+    <div class="container mx-auto px-6 md:px-20 text-center">
+      <img src="https://via.placeholder.com/150" alt="Foto Profil" class="mx-auto rounded-full w-36 h-36 mb-6">
+      <h2 class="text-2xl font-semibold mb-4">Tentang Saya</h2>
+      <p class="text-gray-700 max-w-2xl mx-auto">
+        Ini adalah tempat untuk bio singkat kamu. Ceritakan siapa kamu, apa yang kamu lakukan, dan apa yang membedakan kamu.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <section id="skills">
-      <h2>Keahlian</h2>
-      <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>UI/UX Design</li>
-        <li>Content Writing</li>
-      </ul>
-    </section>
+  <!-- Skills Section -->
+  <section class="bg-gray-50 py-12">
+    <div class="container mx-auto px-6 md:px-20">
+      <h2 class="text-2xl font-semibold text-center mb-8">Keahlian</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4 bg-white shadow rounded">Desain</div>
+        <div class="p-4 bg-white shadow rounded">Frontend</div>
+        <div class="p-4 bg-white shadow rounded">Content Writing</div>
+        <div class="p-4 bg-white shadow rounded">SEO</div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Kontak</h2>
-      <p>Email: <a href="mailto:nama.kamu@email.com" class="contact-link">nama.kamu@email.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/namakamu" target="_blank" class="contact-link">linkedin.com/in/namakamu</a></p>
-      <p>Instagram: <a href="https://instagram.com/namakamu" target="_blank" class="contact-link">@namakamu</a></p>
-    </section>
-  </main>
+  <!-- Portfolio Section -->
+  <section class="py-12">
+    <div class="container mx-auto px-6 md:px-20">
+      <h2 class="text-2xl font-semibold text-center mb-8">Portofolio</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 shadow rounded">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1" class="mb-4 rounded">
+          <h3 class="font-bold">Proyek 1</h3>
+          <p class="text-sm text-gray-600">Deskripsi singkat proyek.</p>
+        </div>
+        <div class="bg-white p-4 shadow rounded">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2" class="mb-4 rounded">
+          <h3 class="font-bold">Proyek 2</h3>
+          <p class="text-sm text-gray-600">Deskripsi singkat proyek.</p>
+        </div>
+        <div class="bg-white p-4 shadow rounded">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3" class="mb-4 rounded">
+          <h3 class="font-bold">Proyek 3</h3>
+          <p class="text-sm text-gray-600">Deskripsi singkat proyek.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    &copy; 2025 Nama Kamu. All rights reserved.
+  <!-- Contact -->
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-6 md:px-20 text-center">
+      <h2 class="text-2xl font-semibold mb-4">Hubungi Saya</h2>
+      <p class="mb-2">📧 emailkamu@email.com</p>
+      <p>📱 WhatsApp: 08xxxxxxxxxx</p>
+      <div class="mt-4 space-x-4">
+        <a href="#" class="text-blue-600 hover:underline">LinkedIn</a>
+        <a href="#" class="text-blue-400 hover:underline">Instagram</a>
+        <a href="#" class="text-gray-800 hover:underline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 Nama Kamu. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
