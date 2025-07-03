@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Branding - Nama Kamu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: white;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    }
+    h2 {
+      color: #007acc;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 0.3rem;
+    }
+    ul.skills {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    ul.skills li {
+      background: #007acc;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      background-color: #e1e8f0;
+    }
+    a.contact-link {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.contact-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nama Kamu</h1>
+    <p>Web Developer | Designer | Content Creator</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Tentang Saya</h2>
+      <p>
+        Halo! Saya adalah seorang web developer dan designer dengan passion dalam menciptakan website yang menarik dan fungsional. Saya senang belajar teknologi baru dan selalu berusaha memberikan hasil terbaik untuk setiap proyek yang saya kerjakan.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Keahlian</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>UI/UX Design</li>
+        <li>Content Writing</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:nama.kamu@email.com" class="contact-link">nama.kamu@email.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/namakamu" target="_blank" class="contact-link">linkedin.com/in/namakamu</a></p>
+      <p>Instagram: <a href="https://instagram.com/namakamu" target="_blank" class="contact-link">@namakamu</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Nama Kamu. All rights reserved.
+  </footer>
+</body>
+</html>
